@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tvapplication.tvapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_NUMBERS"/>
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:foregroundServiceType="location"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="app.tvapplication.tvapp.dmt"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.Splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="app.tvapplication.tvapp.signup"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.changePassword"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.rechargereceipt"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.addMoney"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.mobilerecharge"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.d2h_recharge"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.tvapp.dashboard"
+            android:exported="false" />
+        <activity
+            android:name="app.tvapplication.billdetail.report_MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_report_mainactivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="app.tvapplication.tvapp.bill_receipt"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.tvapplication.tvapp.HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="app.tvapplication.tvapp.LoginActivity"
+            android:exported="true"></activity>
+        <activity
+            android:name="app.tvapplication.tvapp.MainActivity"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

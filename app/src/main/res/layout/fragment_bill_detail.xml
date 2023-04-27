@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3EFEF"
+    tools:context=".bill_detail">
+    <!--<LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Account"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+        <TextView
+            android:textSize="16dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Due Date"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="14dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Trans. ID"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+        <TextView
+            android:layout_width="0dp"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Balance"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Amount"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <TextView
+            android:textSize="14dp"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Status"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textColor="#000000"/>
+    </LinearLayout>
+    -->
+    <TextView
+        android:id="@+id/txtDateFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From:"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_toEndOf="@id/txtDateFrom"
+        android:id="@+id/etFromDate"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Select Date"
+        android:textSize="16sp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/calendar"/>
+    <TextView
+        android:id="@+id/txtDateTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="To:"
+        android:layout_toEndOf="@id/etFromDate"
+        android:layout_marginTop="22dp"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:layout_toEndOf="@id/txtDateTo"
+        android:id="@+id/txtToDate"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="22dp"
+        android:text="Select Date"
+        android:textSize="16sp"
+        android:layout_marginRight="10dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/calendar"/>
+    <Button
+        android:id="@+id/btnDateSearch"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:text="OK"
+        android:background="#ffffff"
+        android:textSize="16sp"
+        android:layout_toRightOf="@id/txtToDate"
+        android:layout_marginTop="10dp" />
+
+
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc"
+        android:layout_below="@id/btnDateSearch"
+        />
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:text="No record found"
+        android:visibility="invisible"/>
+
+    <RelativeLayout
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        />
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:padding="10dp" />
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="5dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/previous"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:text="|"/>
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="@string/next"/>
+    </LinearLayout>
+</RelativeLayout>

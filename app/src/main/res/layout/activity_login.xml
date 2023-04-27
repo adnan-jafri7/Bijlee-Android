@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:animateLayoutChanges="true"
+    tools:context="app.tvapplication.tvapp.LoginActivity">
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/imgFlash"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/style_et"
+        android:src="@drawable/icon_flash" />
+
+    <EditText
+        android:id="@+id/etPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_marginTop="300dp"
+        android:animateLayoutChanges="true"
+        android:padding="10dp"
+        android:ems="1"
+        android:maxLength="10"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Mobile No"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/etPhone"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/style_et"
+        android:padding="10dp"
+        android:ems="1"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:hint="Password"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/button"
+        android:text="Login"
+        android:textColor="#ffffff"
+        android:layout_below="@id/etPassword"/>
+    <TextView
+        android:id="@+id/txtForgotPSW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/btnLogin"
+        android:text="Forgot Password?"
+        android:animateLayoutChanges="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_margin="10dp"
+        android:textColor="#3F51B5"/>
+    <TextView
+        android:id="@+id/txtSignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/txtForgotPSW"
+        android:layout_margin="10dp"
+        android:text="Create New Account"
+        android:animateLayoutChanges="true"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#3F51B5"/>
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPassword"
+        android:visibility="gone"
+        android:animateLayoutChanges="true"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

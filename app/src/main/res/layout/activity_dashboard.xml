@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="4"
+    android:animateLayoutChanges="true"
+    android:id="@+id/DashboardLL"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    tools:context="app.tvapplication.tvapp.dashboard">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="10dp"
+        android:animateLayoutChanges="true"
+        android:background="#ffffff">
+        <RelativeLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/txtHeading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hi, Jafri Computer Centre"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeading"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="00.00"
+                android:textColor="#000000"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+            <ImageView
+                android:src="@drawable/ic_refresh"
+                android:id="@+id/imgGetBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtHeading"
+                android:layout_toEndOf="@+id/txtBalance"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"/>
+            <ProgressBar
+                android:id="@+id/progressBalance"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:layout_below="@+id/txtHeading"
+                android:layout_toEndOf="@+id/txtBalance"
+                android:layout_marginTop="10dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_below="@+id/txtBalance"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:gravity="center"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/addMoney"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add Money"
+                    android:gravity="center"
+                    android:layout_weight="1"
+                    android:drawableTop="@drawable/addmoney"/>
+                <TextView
+                    android:id="@+id/txtChangePassword"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Change Password"
+                    android:drawableTop="@drawable/changepassword" />
+                <TextView
+                    android:id="@+id/txtLogout"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Logout"
+                    android:drawableTop="@drawable/logout" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="2"
+        app:cardCornerRadius="10dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/txtTitleServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:animateLayoutChanges="true"
+            android:weightSum="4">
+        <LinearLayout
+            android:id="@+id/topLinearLayout"
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:animateLayoutChanges="true"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginLeft="10dp"
+            android:weightSum="4">
+
+            <TextView
+            android:id="@+id/txtElectricity"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Electricity"
+            android:layout_margin="10dp"
+            android:drawableTop="@drawable/electricity" />
+            <TextView
+                android:id="@+id/txtMobile"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Mobile Recharge"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/mobile" />
+            <TextView
+                android:id="@+id/txtDTH"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="DTH Recharge"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/dth" />
+            <TextView
+                android:id="@+id/txtDMT"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Money Transfer"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/money" />
+        </LinearLayout>
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:layout_weight="1"
+            android:id="@+id/centreLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_marginStart="10dp"
+            android:weightSum="4">
+
+            <TextView
+                android:id="@+id/txtMobilePostpaid"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Postpaid Bill"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/mobile" />
+            <TextView
+                android:id="@+id/txtWater"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Water Bill"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/water" />
+            <TextView
+                android:id="@+id/txtLandline"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Landline"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/landline" />
+            <TextView
+                android:id="@+id/txtBroadband"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Broadband"
+                android:layout_margin="10dp"
+                android:drawableTop="@drawable/broadband" />
+        </LinearLayout>
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:layout_weight="1"
+                android:id="@+id/bottomUpLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txtGas"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Gas"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/gas" />
+                <TextView
+                    android:id="@+id/txtInsurance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Insurance"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/insurance" />
+                <TextView
+                    android:id="@+id/txtCreditCard"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/creditcard" />
+                <TextView
+                    android:id="@+id/txtGooglePlay"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Google Play"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/googleplay" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:animateLayoutChanges="true"
+                android:layout_weight="1"
+                android:id="@+id/bottomLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_marginStart="10dp"
+                android:weightSum="4">
+
+                <TextView
+                    android:id="@+id/txtfastag"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:text="Fastag Recharge"
+                    android:layout_margin="10dp"
+                    android:drawableTop="@drawable/fastag" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:animateLayoutChanges="true"
+        android:layout_weight="1"
+        app:cardCornerRadius="10dp"
+        android:background="#ffffff">
+        <TextView
+            android:id="@+id/txtTitleReports"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Reports"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+        <LinearLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtBalance"
+            android:layout_height="wrap_content"
+            android:weightSum="3"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/txtAccountHistory"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Account History"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/accounthistory"/>
+            <TextView
+                android:id="@+id/txtSearchTxn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Search Transaction"
+                android:drawableTop="@drawable/searchtxn" />
+            <TextView
+                android:id="@+id/txtDateSearch"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Reports By Date"
+                android:drawableTop="@drawable/datesearch" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

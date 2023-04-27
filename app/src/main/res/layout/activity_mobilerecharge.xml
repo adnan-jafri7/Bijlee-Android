@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:animateLayoutChanges="true"
+    tools:context="app.tvapplication.tvapp.mobilerecharge"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:visibility="visible">
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:imeOptions="actionDone"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:padding="10dp"
+        android:ems="1"
+        android:maxLength="10"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Enter Mobile Number"
+        android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/txtMobileNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:text="Mobile Number"
+            android:visibility="gone" />
+        <ImageView
+            android:id="@+id/txtEditMob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:textSize="20sp"
+            android:textColor="#000fff"
+            android:src="@drawable/edit"
+            android:visibility="gone"
+            android:layout_toEndOf="@id/txtMobileNo"/>
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinnerOperatorName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/txtMobileNo"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/style_et"
+        android:layout_centerHorizontal="true"/>
+    <Spinner
+        android:visibility="gone"
+        android:id="@+id/spinnerCircle"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/spinnerOperatorName"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:enabled="false"
+        android:background="@drawable/style_et"
+        android:layout_centerHorizontal="true"/>
+    <LinearLayout
+        android:visibility="invisible"
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinnerCircle"
+        android:weightSum="5"
+        android:animateLayoutChanges="true"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true">
+
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_weight="2"
+        android:padding="10dp"
+        android:ems="1"
+        android:maxLength="10"
+        android:layout_margin="10dp"
+        android:enabled="false"
+        android:background="@drawable/style_et"
+        android:hint="Enter Amount"
+        android:layout_below="@id/spinnerCircle"
+        />
+        <TextView
+            android:id="@+id/txtOr"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:text="OR"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:textColor="#000000" />
+        <Button
+            android:id="@+id/btnPlan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:background="#4CAF50"
+            android:text="View Plans"
+            android:enabled="false"
+            android:textColor="#ffffff"
+            android:gravity="center"
+            android:layout_weight="2"
+            />
+    </LinearLayout>
+        <View
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_height="2dp"
+            android:background="#80000000"
+            android:layout_below="@id/etMobileNo"/>
+
+        <TextView
+            android:id="@+id/txtRecentRecharges"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recharge History"
+            android:layout_margin="10dp"
+            android:textSize="20sp"
+            android:layout_below="@id/etMobileNo"
+            android:textColor="#000000"/>
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="visible"
+            android:id="@+id/recyclerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtRecentRecharges"
+            android:layout_marginStart="5dp"
+            android:layout_above="@+id/btnRecharge"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/recyclerView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll"
+            android:layout_marginStart="5dp"
+            android:layout_above="@+id/btnRecharge"
+            android:background="#404CAF50"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:padding="10dp" />
+
+        <ProgressBar
+            android:id="@+id/progressBar6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed"
+        android:layout_alignParentBottom="true"
+        android:enabled="false"
+        android:background="#dddddd"
+        android:textColor="#ffffff"/>
+        <Button
+            android:id="@+id/btnRecharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Proceed to recharge"
+            android:layout_alignParentBottom="true"
+            android:enabled="false"
+            android:visibility="invisible"
+            android:background="#ffffff"
+            android:textColor="#ffffff"/>
+</RelativeLayout>
+
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/rl"
+        android:visibility="gone">
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+        <ImageView
+            android:id="@+id/imgValFailed"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:src="@drawable/failed"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/txtValidating"
+            android:layout_below="@id/imgValFailed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="10dp"
+            android:text="Validating Operator, Please Wait..."
+            android:textColor="#000000"
+            android:textSize="20sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

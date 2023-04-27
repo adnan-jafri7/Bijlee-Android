@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:animateLayoutChanges="true"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="#40FFC107"
+        android:layout_marginBottom="10dp"
+        android:clickable="true"
+        app:cardCornerRadius="10dp">
+
+        <RelativeLayout
+            android:animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:animateLayoutChanges="true"
+                android:id="@+id/txtMobile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="8477086932"
+                android:textColor="#000000"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtMobile"
+                android:layout_margin="5dp"
+                android:text="Rs.199"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/txtRechargeDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtAmount"
+                android:layout_margin="5dp"
+                android:text="2021-12-12 14:00:00" />
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rs.122200"
+                android:layout_margin="5dp"
+                android:layout_alignParentEnd="true"
+                android:textColor="#000000"
+                android:textSize="18dp"
+                android:drawableLeft="@drawable/addmoney"/>
+            <TextView
+                android:id="@+id/txtStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Failed"
+                android:layout_margin="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:drawableLeft="@drawable/failed"/>
+            <TextView
+                android:id="@+id/txtOprId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Operator ID"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txtBalance"
+                android:textColor="#0000FF"
+                android:layout_alignParentEnd="true" />
+
+            <ImageView
+                android:id="@+id/imgOpr"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/bsnl"/>
+            <ProgressBar
+                android:id="@+id/progressBar5"
+                android:layout_width="20dp"
+                android:visibility="gone"
+                android:layout_height="20dp"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/txtBalance"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

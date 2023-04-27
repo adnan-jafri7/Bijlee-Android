@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    tools:context="app.tvapplication.tvapp.HomeActivity"
+    >
+    <TextView
+        android:id="@+id/txtLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_alignParentRight="true"
+        android:textSize="16dp"
+        android:visibility="invisible"
+        android:layout_margin="10dp"
+        android:textColor="#3A40B7"/>
+    <TextView
+        android:id="@+id/txtBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance:"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtReports"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/report"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:textColor="#3A40B7"
+        android:textSize="16sp"/>
+    <ImageView
+        android:src="@drawable/ic_refresh"
+        android:id="@+id/imgGetBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/txtBalance"
+        android:layout_marginTop="10dp"/>
+    <ProgressBar
+        android:id="@+id/progressBalance"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:visibility="gone"
+        android:layout_toEndOf="@+id/txtBalance"
+        android:layout_marginTop="10dp"/>
+
+
+    <TextView
+        android:layout_below="@+id/txtLogout"
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Electricity Bill Payment"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerOperatorName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/style_et"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etAccountNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/spinnerOperatorName"
+        android:padding="10dp"
+        android:ems="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Account Number"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etMobileNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="10"
+        android:enabled="true"
+        android:layout_below="@id/etAccountNo"
+        android:padding="10dp"
+        android:ems="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Mobile No (Optional)"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btnfetchBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Fetch Bill"
+        android:layout_below="@id/etMobileNo"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"/>
+
+    <TextView
+        android:id="@+id/txtCustomerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/btnfetchBill"
+        android:textColor="#3A3A43"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtValueCustName"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnfetchBill"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:text="Name Value"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtBillDate"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtValueCustName"
+        android:text="Bill Date : "
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:textColor="#3A3A43"
+        android:textSize="16sp"/>
+    <TextView
+        android:id="@+id/txtValueBillDate"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_alignParentEnd="true"
+        android:ems="10"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtValueCustName"
+        android:text="Bill Date Value"
+        android:textColor="#000000"
+        android:textSize="16sp"/>
+
+
+        <TextView
+            android:id="@+id/txtDueDate"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:text="Due Date : "
+            android:layout_below="@id/txtValueBillDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#3A3A43"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtValueDueDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Due Date"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txtValueBillDate"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtAmount"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtValueDueDate"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Amount : "
+            android:textColor="#3A3A43"
+            android:textSize="16sp"/>
+        <TextView
+            android:id="@+id/txtValueAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtValueDueDate"
+            android:visibility="gone"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:ems="10"
+            android:text="Amount"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="16sp"/>
+    <Button
+        android:id="@+id/btnPayBill"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Pay Bill"
+        android:layout_below="@id/txtValueAmount"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"/>
+    <Button
+        android:id="@+id/btnCancel"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Cancel"
+        android:layout_below="@id/btnPayBill"
+        android:background="@drawable/button"
+        android:textColor="#ffffff"/>
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etMobileNo"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"/>
+    <TextView
+        android:id="@+id/txtLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fetching Bill Please Wait."
+        android:layout_below="@+id/progressBar"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/bbps_logo"
+        android:layout_margin="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+    <RelativeLayout
+        android:animateLayoutChanges="true"
+        android:id="@+id/LoadingLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/RlFull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:animateLayoutChanges="true"
+        android:background="#4CAF50"
+        android:visibility="invisible">
+
+        <ImageView
+            android:id="@+id/imgPaid"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_paid2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPaid"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:text="Success"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

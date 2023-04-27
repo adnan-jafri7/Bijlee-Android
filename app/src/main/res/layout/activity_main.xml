@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.tvapplication.tvapp.MainActivity"
+    android:id="@+id/Rl">
+    <WebView
+        android:id="@+id/WebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnSubmit"/>
+    <TextView
+        android:id="@+id/txtOutlet"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:visibility="invisible"
+        android:gravity="center_vertical"
+        android:textAlignment="center"
+        android:text="Outlet Name:- JAFRI COMPUTER CENTRE"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:id="@+id/txtMobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtOutlet"
+        android:visibility="invisible"
+        android:textAlignment="center"
+        android:text="Outlet Mobile:- 8979319339"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/LL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="90dp"
+        android:visibility="invisible"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:text="Bill Payment Successful"
+            android:textColor="#008000"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Date/Time"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/Tid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAlignment="center"
+            android:text="Transaction Id:AMZN188716"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtOutletName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="at Jafri Computer Centre"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtOutletMobile"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Mobile: 8979319339"
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+        <TextView
+            android:id="@+id/txtNote"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text="Note: The payment will reflect at biller's end after 2-3 working days. This receipt does not guarantee that your bill has been successfully paid. "
+            android:textAlignment="center"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:textSize="10sp"/>
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnShare"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:drawableTop="@drawable/add"
+        android:textColor="#ffffff"
+        android:text="New"
+        android:textAlignment="center"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="5dp"/>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Proceed to Pay"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:background="#FF9900"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true" />
+    <LinearLayout
+        android:id="@+id/LLP"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:visibility="invisible">
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+</RelativeLayout>

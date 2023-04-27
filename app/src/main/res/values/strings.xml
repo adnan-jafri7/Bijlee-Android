@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Bijlee</string>
+    <string name="preference_file">Credential File</string>
+    <string name="Rs">\u20B9</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string-array name="operatorNames_array">
+        <item>Select Operator</item>
+        <item>UPPCL Urban</item>
+        <item>UPPCL Rural</item>
+    </string-array>
+
+    <string-array name="operatorName_array">
+        <item>Select Operator</item>
+        <item>Jio</item>
+        <item>Vi</item>
+        <item>Airtel</item>
+        <item>BSNL</item>
+    </string-array>
+    <string-array name="operatorNamesDTH_array">
+        <item>Select Operator</item>
+        <item>TATA SKY</item>
+        <item>AIRTEL DTH</item>
+        <item>SUN DTH</item>
+        <item>VIDEOCON DTH</item>
+    </string-array>
+    <string name="title_activity_report_mainactivity">report_mainactivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next\u003e</string>
+    <string name="previous">\u003cPrev</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="report"><u>Go to Reports>></u></string>
+    <string name="status"><u>Check Status</u></string>
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable-anydpi/failed.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable-anydpi/icon_flash.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable-anydpi/jio.xml" value="0.12307692307692308" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/accounthistory.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/addmoney.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/broadband.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/button.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/calendar.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/check.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/dropdown.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/ic_bullet.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/ic_paid.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/ic_paid2.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/ic_refresh.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/drawable/style_et.xml" value="0.12432432432432433" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_add_money.xml" value="0.22" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_bill_receipt.xml" value="0.22" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_change_password.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_d2h_recharge.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_dashboard.xml" value="0.12" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_dmt.xml" value="0.16666666666666666" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_login.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_mobilerecharge.xml" value="0.14666666666666667" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_rechargereceipt.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_report_mainactivity.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_signup.xml" value="0.11385135135135135" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/activity_splash.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/dialog.xml" value="0.3333333333333333" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_bill_data6.xml" value="0.11385135135135135" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_bill_detail.xml" value="0.16685082872928178" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_bill_detail2.xml" value="0.5" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_business_report.xml" value="0.22" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_first.xml" value="0.4466666666666667" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/fragment_plans.xml" value="0.11385135135135135" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/recycler_view.xml" value="0.22" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/recycler_view2.xml" value="0.24883359253499224" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/layout/recycler_view3.xml" value="0.22" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.1" />
+        <entry key="..\:/Users/adnan/AndroidStudioProjects/TVApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.1465" />
+        <entry key="..\:/Users/adnan/AppData/Local/Android/Sdk/platforms/android-29/data/res/layout/simple_spinner_dropdown_item.xml" value="0.5" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

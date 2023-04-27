@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.tvapplication.tvapp.d2h_recharge">
+
+
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="DTH Recharge"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/spinnerOperatorName"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="#000000"
+        android:background="@drawable/style_et"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etSubId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:layout_below="@id/spinnerOperatorName"
+        android:padding="10dp"
+        android:ems="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Subscriber Id"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/etAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="10"
+        android:layout_below="@id/etSubId"
+        android:padding="10dp"
+        android:ems="1"
+        android:layout_margin="10dp"
+        android:background="@drawable/style_et"
+        android:hint="Amount"
+        android:layout_centerHorizontal="true"/>
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationSprinkled"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:lottie_rawRes="@raw/button2"
+        android:visibility="visible"
+        android:layout_alignParentBottom="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+
+
+
+
+
+</RelativeLayout>
